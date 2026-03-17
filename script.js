@@ -17,7 +17,7 @@ fetch(sheetURL)
       <h2>${item.ID}</h2>
       <h3>${item.Name}</h3>
       <p>${item.Location}</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=tracking.html?wid=${item.ID}" alt="QR">
+      <img src="https://priyanshugupta34701-maker.github.io/qr-dashboard/tracking.html?wid=WS001" alt="QR">
     `;
 
     container.appendChild(card);
