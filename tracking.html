@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secure Registration</title>
+<link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+
+<div class="form-wrapper">
+
+<div class="form-header">
+  <img src="images/logo.jpeg" class="center-logo">
+  <h1>Kalyan Centenary 2026</h1>
+  <p>Supscription Form</p>
+</div>
+
+<form id="customerForm">
+
+<div class="row">
+
+  <div>
+  <label>First Name <span>*</span></label>
+  <input type="text" id="name" placeholder="First Name" required>
+  </div>
+  
+  <div>
+    <label>Last Name <span>*</span></label>
+    <input type="text" id="lastname" placeholder="Last Name" required>
+  </div>
+  
+</div>
+
+<div>
+  <label>Address1 <span>*</span></label>
+<input type="text" id="address1" placeholder="Address1" class="full-width" required>
+</div>
+
+
+<div>
+<label>Address2 <span>*</span></label>
+<input type="text" id="address2" placeholder="Address2" class="full-width" required>
+
+</div>
+
+<div>
+ <label>Address3</label> 
+<input type="text" id="address2" placeholder="Address2" class="full-width">
+</div>
+
+
+<div class="row3">
+  <div>
+    <label>Pincode <span>*</span></label>
+    <input type="text" id="pincode" placeholder="Pincode">
+  </div>
+  
+  <div>
+    <label>City <span>*</span></label>
+    <input type="text" id="city" placeholder="City name" required readonly >
+  </div>
+  
+  <div>
+    <label>State<span>*</span></label>
+    <input type="text" id="state" placeholder="State" required readonly>
+  </div>
+  
+</div>
+
+<div class="row">
+  <div>
+    <label>Phone<span>*</span></label>
+<input type="tel" id="phone" placeholder="Mobile / WhatsApp" required>
+  </div>
+  
+  <div>
+    <label>Email</label>
+    <input type="email" id="email" placeholder="abc@gmail.com">
+  </div>
+  
+</div>
+
+<input type="hidden" id="wid">
+
+<button type="submit">Proceed to Pay →</button>
+
+</form>
+
+</div>
+
+<script src="tracking.js"></script>
+</body>
+</html>
