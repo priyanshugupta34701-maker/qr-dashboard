@@ -59,17 +59,25 @@ document.getElementById("searchInput").addEventListener("keyup", function(){
 
     const cards = document.querySelectorAll(".card");
 
+    let found = false;
     cards.forEach(card => {
 
         const text = card.innerText.toLowerCase();
 
         if(text.includes(value)){
             card.style.display = "block";
+            found = true;
         } else {
             card.style.display = "none";
         }
 
     });
+
+  if(found){
+    document.getElementById("noResult").style.display = "none;
+  } else{
+    document.getElementById("noResult").style.display = "block;
+  }
 
 });
 
