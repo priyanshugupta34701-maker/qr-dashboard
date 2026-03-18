@@ -12,13 +12,18 @@ fetch(sheetURL)
 
     card.className = "card";
 
-    card.innerHTML = `
-      <p class="id">WHOLESALER ID</p>
-      <h2>${item.ID}</h2>
-      <h3>${item.Name}</h3>
-      <p>${item.Location}</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://priyanshugupta34701-maker.github.io/qr-dashboard/tracking.html?wid=${item.ID}" alt="QR">
-    `;
+   card.innerHTML = `
+  <p class="id">WHOLESALER ID</p>
+  <h2>${item.ID}</h2>
+  <h3>${item.Name}</h3>
+  <p>${item.Location}</p>
+
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent('https://priyanshugupta34701-maker.github.io/qr-dashboard/tracking.html?wid=' + item.ID)}" alt="QR">
+
+  <a href="https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data=${encodeURIComponent('https://priyanshugupta34701-maker.github.io/qr-dashboard/tracking.html?wid=' + item.ID)}" download>
+    Download QR
+  </a>
+`;
 
     container.appendChild(card);
 
