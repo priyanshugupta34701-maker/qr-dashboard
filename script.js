@@ -53,6 +53,7 @@ function downloadQR(id){
 
 }
 
+
 document.getElementById("searchInput").addEventListener("keyup", function(){
 
     const value = this.value.toLowerCase();
@@ -60,6 +61,7 @@ document.getElementById("searchInput").addEventListener("keyup", function(){
     const cards = document.querySelectorAll(".card");
 
     let found = false;
+
     cards.forEach(card => {
 
         const text = card.innerText.toLowerCase();
@@ -73,14 +75,13 @@ document.getElementById("searchInput").addEventListener("keyup", function(){
 
     });
 
-  if(found){
-    document.getElementById("noResult").style.display = "none;
-  } else{
-    document.getElementById("noResult").style.display = "block;
-  }
+    if(found){
+        document.getElementById("noResult").style.display = "none";
+    } else {
+        document.getElementById("noResult").style.display = "block";
+    }
 
 });
-
 
 
 
