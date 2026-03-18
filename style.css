@@ -148,6 +148,7 @@ body {
   padding: 22px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   transition: 0.3s;
+  text-align:center;
 }
 
 .card:hover {
@@ -177,10 +178,16 @@ body {
   font-size: 15px;
 }
 
+.card h2,
+.card h3,
+.card p{
+  margin:8px 0;
+}
+
 .card img {
   width: 150px;
   display: block;
-  margin: 24px auto;
+  margin: 0 auto 20px;
   border-radius: 14px;
 }
 
